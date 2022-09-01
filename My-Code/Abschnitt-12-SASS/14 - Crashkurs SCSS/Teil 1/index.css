@@ -1,0 +1,13 @@
+h1 {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  color: red;
+}
+/*# sourceMappingURL=index.css.map */
