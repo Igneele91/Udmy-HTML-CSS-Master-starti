@@ -1,0 +1,18 @@
+h1 {
+  color: #660000;
+  border-bottom: 3px solid #660000;
+}
+
+h1:hover {
+  color: green;
+  border-bottom: 3px solid green;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+ul li, ol li {
+  color: red;
+}
+/*# sourceMappingURL=index.css.map */

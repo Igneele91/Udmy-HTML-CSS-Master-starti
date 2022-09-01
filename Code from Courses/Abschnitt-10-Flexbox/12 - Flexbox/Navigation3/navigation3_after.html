@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox - Ein einfaches Beispiel</title>
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <style>
+      .navigation {
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+          /* align-items: baseline; */
+
+          border: 1px solid black;
+          background-color: white;
+          height: 120px;
+          padding-left: 0px;
+      }
+
+      .navigation li {
+          list-style-type: none;
+          flex: 0 0 auto;
+          background-color: rgb(230, 230, 230);
+      }
+      
+      .navigation li.first {
+        align-self: flex-start;
+      }
+      .navigation li.second {
+        align-self: center;
+      }
+      .navigation li.third {
+        align-self: flex-end;
+      }
+      .navigation li.fourth {
+        align-self: stretch;
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <ul class="navigation">
+        <li class="first" style="font-size: 2em;"><a href="#">Home</a></li>
+        <li class="second" ><a href="#">Team</a></li>
+        <li class="third" ><a href="#">Anreise</a></li>
+        <li class="fourth" ><a href="#">Kontakt</a></li>
+    </ul>
+  </body>
+</html>
